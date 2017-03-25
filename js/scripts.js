@@ -1,17 +1,21 @@
-var a=prompt("Podaj wartość a",a),
-    b=prompt("Podaj wartość b",b),
-    value;
-   
+var a = prompt("Podaj wartość a"),
+  b = prompt("Podaj wartość b"),
+  value;
+
 value = (a * a) + (2 * a * b) - (b * b);
 
-console.log(value);
-
-//if (value>0) {
-//  console.log('wartość dodatnia');
+//if (value > 0) {
+ // console.log('wartość dodatnia');
+//} else if (value < 0) {
+//  console.log('wartość ujemna');
 //} else {
-// console.log('wartość ujemna');}
-//
+//  console.log('wartość 0');
+//}
 
-//(value > 0) ? console.log('wartość dodatnia') : console.log('wartość ujemna');
-
-(value > 0) ? alert(value + ' - wartość dodatnia') : alert(value + ' - wartość ujemna');
+if (value > 0) {
+  alert(value + ' - wartość dodatnia');
+} else if (value < 0) {
+  alert(value + ' - wartość ujemna');
+} else {
+  alert('wartość 0');
+}
